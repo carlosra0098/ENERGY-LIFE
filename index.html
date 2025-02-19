@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENERGY LIFE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ecologistas vs Ecocidas y Dado</h1>
+
+        <!-- Contadores de Puntos -->
+        <div class="counters">
+            <div class="counter">
+                <h2>Agricultor</h2>
+                <button onclick="changePoints(0, -100)">-100</button>
+                <span id="points-0">0</span>
+                <button onclick="changePoints(0, 100)">+100</button>
+            </div>
+            <div class="counter">
+                <h2>Político</h2>
+                <button onclick="changePoints(1, -100)">-100</button>
+                <span id="points-1">0</span>
+                <button onclick="changePoints(1, 100)">+100</button>
+            </div>
+            <div class="counter">
+                <h2>Activista</h2>
+                <button onclick="changePoints(2, -100)">-100</button>
+                <span id="points-2">0</span>
+                <button onclick="changePoints(2, 100)">+100</button>
+            </div>
+            <div class="counter">
+                <h2>Científico</h2>
+                <button onclick="changePoints(3, -100)">-100</button>
+                <span id="points-3">0</span>
+                <button onclick="changePoints(3, 100)">+100</button>
+            </div>
+        </div>
+
+        <!-- Dado -->
+        <div class="dice">
+            <h2>Lanzar Dado</h2>
+            <button onclick="rollDice()">Lanzar</button>
+            <div id="diceResult">
+                <img id="diceImage" src="img/1.png" alt="Dado">
+            </div>
+        </div>
+    </div>
+    </br>
+    <div class="container">
+        <h1>Instrucciones y Reglas</h1>
+        
+        <!-- Contenedor para el PDF -->
+        <div class="pdf-container">
+            <iframe src="./pdf/Juego de mesa sostenible Energy Life.pdf"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
