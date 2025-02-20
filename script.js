@@ -16,18 +16,3 @@ function rollDice() {
     const diceImage = document.getElementById('diceImage');
     diceImage.src = `img/${diceResult}.png`; // Cambia la imagen según el resultado
 }
-
-// Lista de personajes
-const personajes = ["Científico", "Político", "Agricultor", "Activista"];
-
-// Función para seleccionar un personaje aleatorio
-function seleccionarPersonaje() {
-    // Selecciona un índice aleatorio
-    const indiceAleatorio = Math.floor(Math.random() * personajes.length);
-    // Obtiene el personaje correspondiente
-    const personajeSeleccionado = personajes[indiceAleatorio];
-    // Muestra el resultado en la página
-    document.getElementById("resultado").innerHTML = `
-        <p>¡El personaje seleccionado es: <strong>${personajeSeleccionado}</strong>!</p>
-    `;
-}
